@@ -1,0 +1,394 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    width: fit-content;
+}
+
+:root {
+    --bardhe: white;
+    --zi: #000000;
+    --primare:purple;
+    --sekondare: #484848;
+    --gri: #ddd;
+    --grierret: #777777;
+}
+
+nav {
+    background: var(--primare);
+    width: 100%;
+    height: 80px;
+    color: var(--bardhe);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+label.logo
+{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px 0 100px;
+}
+
+nav ul
+{
+    color: white;
+    float: right;
+    margin-right: 20px;
+    padding: 0 200px;
+}
+
+nav ul li
+{
+    color: white;
+    line-height: 80px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+nav ul li a
+{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-decoration: none;
+}
+
+a.active,
+a:hover 
+{
+    background: var(--grierret);
+    transition: 0.5s;
+}
+
+.container
+{
+    padding: 0 0px;
+}
+
+.hero
+{
+    background: url(images/foto_kryesore.avif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title
+{
+    font-size: 120px;
+    color: black;
+    font-weight: 100;
+    margin-bottom: 35px;
+    padding: 0px 90px 0px 90px;
+    text-align: center;
+}
+
+.button-hero 
+{
+    display: flex;
+    margin: auto;
+    padding: 13px 50px;
+    background-color: var(--gri);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.button-hero:hover
+{
+    background-color: var(--primare);
+    transition: 0.5s;
+    color: white;
+}
+
+/*butoni search*/
+
+button[type="button"] {
+
+  display: flex;
+  margin: auto;
+  padding: 13px 50px;
+  background-color:var(--primare); 
+  color: white; 
+ 
+
+  padding: 10px 20px;
+  height: 50px;
+  
+  font-size: 30px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+ 
+  
+}
+
+button[type="button"]:hover {
+  background-color: #3e8e41; 
+}
+
+
+#search-input {
+  display:flex;
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 30 auto;
+}
+
+  
+
+
+
+
+
+/* stilizimi i kategorive */
+
+.category
+{
+  height: 100vh;
+  margin-top: 40px;
+}
+
+.category h1
+{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.filter
+{
+  display: flex;
+  justify-content: center;
+}
+
+.button
+{
+  padding: 10px 50px;
+  background-color: var(--primare);
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  margin: 10px 5px;
+}
+
+
+/* stilizimi i pjeses se menuse*/
+.services
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px 0;
+    margin: 120px 0;
+}
+
+
+
+.cards
+{
+    display: flex;
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+.card
+{
+    padding: 50px 100px;
+    border: none;
+    margin: 0 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.7), 0 5px 20px 0 rgba(0, 0, 0, 0.7);
+    width: 70%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.front
+{
+    backface-visibility: hidden;
+}
+
+
+
+.card h2
+{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primare);
+    padding-top: 25px;
+
+}
+
+/* Stilizimi i popup */
+#popup-container {
+  position:fixed;
+
+  display: flex;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#popup-content {
+  padding: 20px;
+}
+
+
+
+
+
+/* stilizimi i pjeses se rreth nesh */
+
+.about-us
+{
+  display: flex;
+  justify-content: center;
+  background-color: var(--primare);
+  padding: 35px 0px;
+}
+
+.about-us h1
+{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding: 20px 0px;
+}
+
+.about-us-content
+{
+  display: flex;
+}
+
+.about-us-content img
+{
+  max-width: 700px;
+  padding: 0px 40px;
+  
+}
+
+.about-us-content p
+{
+  font-size: 18px;
+  color:white;
+}
+
+
+/* stilizimi i pjeses se kontaktit */
+.contact
+{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(220, 220, 220, 0.2);
+  padding: 40px 0;
+}
+
+.contact h1
+{
+  font-size: 40px;
+  padding: 40px 0;
+}
+
+.contact-form
+{
+  font-size: 18px;
+  display: grid;
+}
+
+.contact-form input
+{
+  width: 600px;
+  height: 50px;
+  padding: 20px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3), 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: 2px solid var(--primare);
+  margin: 10px;
+  font-size: 17px;
+}
+
+.contact textarea
+{
+  border: 2px solid var(--primare);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3), 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.contact-form label
+{
+  font-size: 18px;
+  display: flex;
+  padding: 10px;
+}
+
+#send-button
+{
+  display: flex;
+  justify-content: center;
+  background-color: var(--primare);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#send-button:hover
+{
+  background-color: greenyellow;
+  transition: 0.5s;
+}
+
+
+/* stilizimi i pjeses se fundit */
+.footer
+{
+  background-color: var(--primare);
+  padding: 70px;
+  text-align: center;
+  color:white
+ 
+}
+  

@@ -1,0 +1,316 @@
+<html>
+<!-- hapja e dokumentit HTML dhe percaktimi i kesaj gjuhe -->
+
+<head>
+    <title>Pet Expo-Website...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- shiriti i menyse naviguese -->
+    <nav>
+        <label class="logo">PET EXPO</label>
+        <ul>
+            <!-- unorderedlist - list e padefinuar ose e panumeruar -->
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#rrethnesh">About Us</a></li>
+            
+            <li><a href="#kontakti">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- paraqitja e heroit apo pjeses kryesore te faqes -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-elements">
+              <h1 class="title" id="titulli-i-ri">
+              Welcome on Pet Expo!
+              </h1>
+              <button class="button-hero" onclick="ndryshotitullin()">
+                More...
+              </button>
+            </div>
+        </div>
+    </div>
+     
+                
+            </div>
+        </div>
+    </div>
+
+
+<!--search button-->
+
+<input type="text" id="search-input" placeholder="Type of animal">
+
+<button type="button" onclick="search">Search</button>
+
+ 
+   
+  
+<!-- paraqitja e kategorive  -->
+<div class="category" id="menu">
+  <div class="container">
+    <div class="category-elements">
+      <h1>Explore our Pet Categories</h1>
+
+      <div class="filter">
+        <a href="#" class="button active"data-filter="tegjitha">All pets</a>
+        <a href="#" class="button"data-filter="dogs">Dogs</a>
+        <a href="#" class="button"data-filter="cats">Cats</a>
+        <a href="#" class="button"data-filter="birds">Birds</a>
+      </div>
+
+      
+
+    
+      
+<!-- paraqitja e kartave ne faqe -->
+<div class="services"id="menu" >
+  <div class="container">
+    
+    <!--paraqitja e qeneve -->
+
+    <div class="cards">
+      <!-- karta e pare apo kolona e pare -->
+           
+      <div class="card dogs " data-card-id="golden retriever" onclick="handleCardClick()">
+        <div class="front">
+
+
+          <img src="images/qen1.jpeg" alt="ikona e qenit" />
+          <h2>Name:Golden Retriever
+            Origin:Scotland
+          </h2>
+
+
+
+
+        </div>
+        
+      </div>
+
+      <!-- kolona e dyte -->
+      <div class="card dogs " data-card-id="labrador"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/qen2.jpeg" alt="ikona e qenit" />
+          <h2>Name:Labrador
+            Origin:Canada
+          </h2>
+
+
+
+               <!-- The popup container -->
+<div id="popup-container" style="display:none;">
+  <!-- The popup content -->
+  <div id="popup-content">
+    <h2>More information aboutLabrador dogs</h2>
+    <p>"id":1,"name":"Golden Retriever","breed_group":"Sporting","size":"Large","lifespan":"10-12 years","origin":"Scotland","temperament":"Intelligent, Friendly, Devoted","colors":["Golden","Cream"],"description":"The Golden Retriever is a friendly and intelligent breed known for its gentle nature and love for people. They are great family pets and excel in various roles, including as guide dogs, therapy dogs, and search and rescue dogs</p>
+  </div>
+</div>
+        </div>
+      
+      </div>
+
+      <!-- kolona e trete -->
+      <div class="card dogs "data-card-id="german shepherd"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/qeni3.webp" alt="ikona e qenit" />
+          <h2>Name:German Shepherd
+                Origin:Germany
+          </h2>
+
+          
+        </div>
+       
+      </div>
+      
+
+
+      
+     
+    </div>
+  </div>
+</div>
+     
+
+<!-- paraqitja e kartave ne faqe -->
+<div class="services" id="menu">
+  <div class="container">
+   
+    <!--paraqitja e maceve -->
+
+    <div class="cards ">
+     
+           <!-- kolona e pare -->
+          
+                
+                 
+           <div class="card cats "data-card-id="persian" onclick="handleCardClick()">
+
+                  <div class="front">
+          
+                    <img src="images/cat1.webp" alt="cats" />
+                    <h2>Name:Persian
+                      Origin:Iran
+                    </h2>
+
+
+
+       
+                  </div>
+                 
+                </div>
+          
+        
+        
+      <!-- kolona e dyte -->
+      <div class="card cats "data-card-id="siamese"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/cat2.jpg" alt="cats" />
+          <h2>Name:Siamese
+            Origin:Thailand
+          </h2>
+
+ 
+
+        </div>
+      </div>
+
+      <!-- kolona e trete -->
+      <div class="card cats "data-card-id="marinecoon"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/cat3.jpeg" alt="cats" />
+          <h2>Name:Maine Coon
+            Origin:United States
+          </h2>
+
+
+        </div>
+       
+      </div>
+      <div class="services1" id="sherbimet"></div>
+
+
+      
+     
+    </div>
+  </div>
+</div>
+  
+
+<!-- paraqitja e menuve ne faqe -->
+<div class="services" id="menu">
+  <div class="container">
+  
+    <!--paraqitja e zogjve -->
+
+    <div class="cards">
+
+      <!-- karta e pare apo kolona e pare -->
+      <div class="card birds "data-card-id="bald eagle"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/bird1.jpg" alt="birds" />
+          <h2>Name:Bald Eagle
+            Origin:North America
+          </h2>
+        </div>
+        
+      </div>
+
+      <!-- kolona e dyte -->
+      <div class="card birds"data-card-id="peacock"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/bird2.jpg" alt="birds" />
+          <h2>Name:Peacock
+            Origin:India
+          </h2>
+        </div>
+        
+      </div>
+
+      <!-- kolona e trete -->
+      <div class="card birds"data-card-id="hornbill"onclick="handleCardClick()">
+        <div class="front">
+
+          <img src="images/bird3.jpg" alt="birds" />
+          <h2>Name:Hornbill
+            Origin:Africa
+          </h2>
+        </div>
+        
+      </div>
+      
+
+
+      
+     
+    </div>
+  </div>
+</div>
+
+    <!-- sektori i informatave rreth kompanise -->
+    <div class="about-us" id="rrethnesh">
+        <div class="container">
+            <h1 id="about-us-title">About us</h1>
+
+            <div class="about-us-content">
+                <img src="images/allinone.jpg">
+                
+
+                <p>
+                    Pet Expo is the bigest home for pets in Europe.
+                       In our ambients you will find pets like dogs,cats and birds.
+                We have about 200 hundred different species.We take care and make them feel
+                like they are in their habitats.We give them the warm and love.
+                Come and visit us to see more.
+                We promise that you will be very suprised and a good energy will be given to you.We open our
+                first home for them in 2010.
+                
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- sektori i kontaktit -->
+    <div class="contact" id="kontakti">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="contact-form">
+
+                <form name="myform">
+
+                    <label for="emri">Name:</label>
+                    <input type="text" name="emri" id="emriInput"> <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="emailInput"> <br>
+
+                    <label for="pershkrimi">Message:</label>
+                    <textarea name="pershkrimi" rows="10" id="pershkrimiInput"></textarea> <br>
+
+                    <input type="button" id="send-button" value="Send">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- sektori i fundit te faqes i njohur si footer -->
+    <div class="footer">
+        <h4>Te gjitha te drejtat e rezervuara nga Pet Expo | Mundesoi: Pet Expo June 2024</h4>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
